@@ -1,0 +1,314 @@
+@media screen and (max-width: 600px) {
+
+body h1 {font-size: 2.2rem;}	
+section:nth-child(1) {margin-bottom: 9rem;}
+#submit_button {
+	width: 15rem;
+	min-width: 100px;
+	position: absolute;
+    right: -1rem;
+    top: 14rem;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 0.4rem 0.25rem;
+    background-color: rgb(140, 210, 140);
+    opacity: .95;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px rgba(100, 170, 100, 1);
+    font: 2rem 'Permanent Marker', cursive;
+    color: rgba(237, 237, 237, 1);
+    transition: 150ms ease-in-out;
+}
+#submit_button:hover {
+	top:274px;
+	cursor: pointer;
+	box-shadow: 0 4px rgba(100, 170, 100, 1) ;
+}
+#submit_button:active {
+	top: 278px;
+	box-shadow: 0 0 rgba(100, 170, 100, 1);
+}
+
+#notebook_form_div {
+	width: 95%;
+}
+
+form {position: relative;}
+
+.input-date-time {
+	position: absolute;
+	left: -25px;
+	bottom: 7px;
+	border: none;
+}
+
+}
+/*------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+
+body {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	margin: 0;
+	background-image: url(style/images/cork-back.jpg);
+	font-family: 'Calligraffitti', cursive;
+}
+
+
+body header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+body h1 {
+	margin-left: auto;
+	margin-right: auto;
+	font: 3.6rem 'Permanent Marker', cursive ;
+	/*font-family: 'Zing Easy', cursive;*/
+	opacity: .65;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	user-select: none;
+	transition: 300ms ease-in-out;
+}
+body h1:active {
+	margin-top: 10px;
+	text-shadow: 2px 15px 20px;
+}
+
+/* ---------------------------------------------------------------------------------------------*/
+
+
+section:nth-child(1) {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 12rem;
+}
+
+
+.notebook-form-div {
+	width: 50%;
+    max-width: 670px;
+	background-image: url(style/images/formbg.jpg);
+    padding-right: 62px;
+	padding-left: 90px;
+    box-sizing: border-box;
+	opacity: .97;
+	border-radius: 2px;
+    box-shadow: 7px 6px 20px -8px;	
+}
+
+
+.notebook-form-div form {
+	position: relative;
+	width: 100%;
+}
+
+
+@font-face { 
+	font-family: "handwrite";
+	src: url(style/fonts/"DKChocolatte.otf");
+}
+@font-face { 
+	font-family: "moshe";
+	src: url(style/fonts/"sunnyday.ttf");
+}
+
+
+.notebook-form-div textarea {
+    width: 100%;
+    margin-top: 16px;
+    padding-top: 2px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    resize: none;
+    font: 35px "moshe";
+    color: rgba(0, 0, 0, 0.8);
+    /* font-family: 'IM Fell English', serif; */
+    line-height: 33px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0.2em;
+}
+ 
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.3);
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(249, 128, 130, .9);
+  outline: 1px solid slategrey;
+}
+
+
+.input-date-time {
+    margin:10px 0 -6px 0;
+    background: transparent;
+	padding: 10px 0px 10px 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+	text-align: center;
+    font: bold 18px monospace;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#submit_button {
+	width: 15rem;
+	min-width: 100px;
+	position: absolute;
+    right: -1rem;
+    top: 16rem;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 0.7rem 3.25rem;
+    background-color: rgb(140, 210, 140);
+    opacity: .95;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px rgba(100, 170, 100, 1);
+    font: 2rem 'Permanent Marker', cursive;
+    color: rgba(237, 237, 237, 1);
+    transition: 150ms ease-in-out;
+}
+#submit_button:hover {
+	top:274px;
+	cursor: pointer;
+	box-shadow: 0 4px rgba(100, 170, 100, 1) ;
+}
+#submit_button:active {
+	top: 278px;
+	box-shadow: 0 0 rgba(100, 170, 100, 1);
+}
+
+
+#clear_button {
+	position: absolute;
+	right: -4.5rem;
+	top: 0.2rem;
+	background-color: unset;
+	padding: 0.5rem 1rem;
+	opacity: .7;
+	border-radius: 15px;
+	border: none;
+	transition: 150ms ease-in-out;
+}
+
+#clear_button:active { top:-0rem; }
+#clear_button:active > img {
+	width: 45px;
+	top: 1rem;
+}
+#clear_button img {height: 2.5rem;}
+
+.buttons:focus {outline: none;}
+.buttons:hover {background: transparent; opacity: .3;}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+section:nth-child(2) {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+
+.all-notes {
+	max-width: 80%;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+
+.note {
+	position: relative;
+	width: 200px;
+	height: 250px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column;
+	margin: 0 1rem;
+	background-image: url(style/images/"notebg.png");
+	padding: 16px 16px;
+	box-sizing: border-box;
+}
+
+
+.note p {
+    width: 80%;
+	margin: 15px 11px 3px 7px;
+    white-space: pre-line;
+    font-size: 15px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+p::-webkit-scrollbar {
+    width: 0.1em;
+}
+ 
+p::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.3);
+}
+ 
+p::-webkit-scrollbar-thumb {
+  background-color: rgba(249, 128, 130, .9);
+  outline: 1px solid slategrey;
+}
+
+
+.note button {
+	position: absolute;
+	top: 0;
+	right: -4px;
+	background: transparent;
+	border:0;
+	transition: 200ms ease-in-out;
+}
+.active-hover { width: 7rem; opacity: .9; }
+
+.note button:focus {outline: 0;}
+
+.note button:hover > img { width: 95%; }
+.note button:active > img { width: 90%; }
+
+.note button img {
+	width: 100%;
+	transition: 100ms ease-in-out;
+}
+
+
+.note span { width: 50%; font-size: 12px; }
+
+
+/*--------------------------------------------------------------------*/
+
+
+.note { 
+	animation: noteAnim 1500ms ; }
+
+@keyframes noteAnim {
+	0% { opacity: 0 }
+	/*25% { opacity: 0.1 }
+	50% { opacity: 0.2 }
+	75% { opacity: 0.5 }*/
+	100% { opacity: 1 }
+}
+
+
+body {
+	animation: noteAnim 800ms; }
+
+section:nth-child(1) {
+	animation: noteAnim 1000ms; }
+
+}
